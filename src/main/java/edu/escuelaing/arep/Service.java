@@ -17,8 +17,8 @@ public class Service {
 
     public static void main(String[] args) {
 
-        services.add(new ServiceStatus("http://localhost:4567/", true));
-        services.add(new ServiceStatus("http://localhost:4566/", true));
+        services.add(new ServiceStatus("https://ec2-54-160-143-202.compute-1.amazonaws.com:4567/", true));
+        services.add(new ServiceStatus("https://ec2-54-160-143-202.compute-1.amazonaws.com:4567/", true));
 
         port(getPort());
         get("/exp", "application/json", (req, res) -> {
